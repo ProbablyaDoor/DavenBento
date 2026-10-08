@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Staff of Daven</title>
+  </head>
+
+    <style>
+        *, *::after, *::before {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            font: inherit;
+            border: none;
+            cursor: pointer;
+        }
+            
+        .container {
+            min-height: 100vh;
+            display: grid;
+            gap: 2rem;
+            place-items: center;
+            align-content: center;
+        }
+
+        .container--flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            place-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            font-size: 1.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5em;
+            background-color: hsl(45, 87%, 52%);
+            color: hsl(0, 40%, 15%);
+            text-decoration: none;
+            padding: .4em 1.4em;
+            border-radius: .2em;
+            box-shadow:
+                .05em .1em .9em hsl(20 100% 50% / .3),
+                0 0 0 -.1em hsl(20, 100%, 36%),
+                0 0 0 -.2em hsl(20, 100%, 27%)
+        }
+
+        .btn:where(:active, :hover){
+            background-color: hsl(66, 100%, 68%);
+        }
+    </style>
+  <body>
+    <div class="container">
+        <h1>Meet the Team!</h1>
+        <div class="container--flex">
+            <div class="staff_member">
+            <img src = https://cdn.discordapp.com/attachments/1199156459469013092/1557665145008951306/daveens.PNG?ex=6ac8a036&is=6ac74eb6&hm=6710a483ad81d5f9ce2bcdc1923ae0050865bf44b0c8acc959fd62cc29e6e0bc&>
+            <h1>Daven (Head Chef)</h1>
+            </div>
+            <div class="staff_member">
+            <img src = https://cdn.discordapp.com/attachments/1199156459469013092/1557665102336106587/orpheepus.PNG?ex=6ac8a02c&is=6ac74eac&hm=fdb31da906c2bb7f4503950df97b64ed764dd4cfa56db508705a1503fb4f7fa2&>
+            <h1>Orpheus (Chef)</h1>
+            </div>
+            <div class="staff_member">
+            <img src = https://cdn.discordapp.com/attachments/1199156459469013092/1557665101807358032/pybentoman.png?ex=6ac8a02c&is=6ac74eac&hm=42774ce66cc3a8530e4bcd9011c812be132295d84957a893258810ec1b878cf8&>
+            <h1>Py (Chef)</h1>
+            </div>
+
+        </div>
+        <div class="container--flex">
+            <button class="btn" onclick="window.location.href='index.html'">Back</button>
+        </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    font-family: "Arial";
+    background-image: radial-gradient(circle,#f0ad01,#c55306);
+
+    min-height: 100vh;
+    background-attachment: fixed;
+    margin:0cqw 0;
+}
+.title{
+    font-size: 60px;
+
+}
+.subheader{
+    font-size: 30px;
+}
+
+img {
+    max-width: 600px; /* Adjust this number until it looks right to you */
+    height: auto;
+}

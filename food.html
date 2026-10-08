@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Food of Daven</title>
+  </head>
+
+    <style>
+        *, *::after, *::before {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        button {
+            font: inherit;
+            border: none;
+            cursor: pointer;
+        }
+            
+        .container {
+            min-height: 100vh;
+            display: grid;
+            gap: 2rem;
+            place-items: center;
+            align-content: center;
+        }
+
+        .container--flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            place-items: center;
+            justify-content: center;
+        }
+
+        .btn {
+            font-size: 1.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5em;
+            background-color: hsl(45, 87%, 52%);
+            color: hsl(0, 40%, 15%);
+            text-decoration: none;
+            padding: .4em 1.4em;
+            border-radius: .2em;
+            box-shadow:
+                .05em .1em .9em hsl(20 100% 50% / .3),
+                0 0 0 -.1em hsl(20, 100%, 36%),
+                0 0 0 -.2em hsl(20, 100%, 27%)
+        }
+
+        .btn:where(:active, :hover){
+            background-color: hsl(66, 100%, 68%);
+        }
+    </style>
+  <body>
+    <div class="container">
+        <h1>Our Food!11!</h1>
+        <div class="container--flex">
+            <img src = "https://cdn.discordapp.com/attachments/1199156459469013092/1557661048985751563/pie_cool.png?ex=6ac89c66&is=6ac74ae6&hm=59e784acace70ddbb34125d4e4dbc05ddbb57e7e5128fb5a80e154a310da5461&"
+            />
+            <img src = https://cdn.discordapp.com/attachments/1199156459469013092/1557661296843825152/222332-how-to-cook-a-turkey-ddmfs-1x1-1-7560311b7ccc4efc8ef0b065f346d966.jpg?ex=6ac89ca1&is=6ac74b21&hm=ccf7b44e40786d5e29d3d506d6c62940d8a6ad5399e32a446c99e19a40b75e2d&
+            />
+            <img src =https://cdn.discordapp.com/attachments/1199156459469013092/1557661638264492052/images_3.jpg?ex=6ac89cf2&is=6ac74b72&hm=5246e17b105c33c5abba2f030b02dc9309d9293a3ee57bd6f85d7e8443a1bd07&
+            />
+        </div>
+        <p>*We do not guarantee your food will actually look like this</p>
+        <div class="container--flex">
+            <button class="btn" onclick="window.location.href='index.html'">Back</button>
+        </div>
+    </div>
+  </body>
+</html>
+
+
